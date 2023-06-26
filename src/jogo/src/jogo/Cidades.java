@@ -8,6 +8,4 @@ public class Cidades {
     public void criarCidades(Cidade nome, Cidade pesoPedra , boolean quest){
       new Cidade();
     }
-
-    grafo.criarCidades()
 }
