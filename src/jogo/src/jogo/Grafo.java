@@ -6,6 +6,11 @@ class Grafo {
     private ArrayList<Aresta> arestas;
     private ArrayList <Vertice> vertices;
 
+    public void Grafo(<Aresta>arestas, <Vertice>vertices){
+        this.arestas = arestas;
+        this.vertices = vertices;
+    }
+
     public void adicionarVertice (Vertice vertice){
         vertices.add(vertice);
     }
