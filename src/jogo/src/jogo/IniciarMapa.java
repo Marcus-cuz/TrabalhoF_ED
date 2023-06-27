@@ -34,7 +34,8 @@ public class IniciarMapa {
 
 
     public static void adicionarCaminho(Aresta id,Aresta origem, Aresta destino){
-        
+        grafo.adicionarAresta(0,null , null);
+        grafo.adicionarAresta(0, null, null);
 
     }
 
