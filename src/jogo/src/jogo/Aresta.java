@@ -1,21 +1,26 @@
 package src.jogo;
 
-
 public class Aresta {
-    private Vertice destino;
-    private Vertice origem;
 
-    public Aresta (Vertice destino, Vertice origem){
-        this.destino = destino;
-        this.origem = origem;
+    // Atributos da classe, realiza a ligação entre 2 vertices;
+
+    private Vertice start;
+    private Vertice end;
+
+    // construtor;
+
+    public Aresta (Vertice start, Vertice end) {
+        this.start = start;
+        this.end = end;
     }
 
-    public Vertice getDestino() {
-        return destino;
+    // get;
+
+    public Vertice getStart () {
+        return this.start;
     }
 
-    public Vertice getOrigem() {
-        return origem;
+    public Vertice getEnd () {
+        return this.end;
     }
-
 }

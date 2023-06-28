@@ -15,7 +15,7 @@ public class LimiarPedra{
     }
 
     public void MudarPeso() {
-        int quantidadePoder = getQuantidadePoder(cidadeAtual);
+        int quantidadePoder = getQuantidadePoder(currentCity);
         pesoPedra += quantidadePoder;
     }
 }

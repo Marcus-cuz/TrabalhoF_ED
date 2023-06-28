@@ -1,24 +1,47 @@
 package src.jogo;
-import java.util.ArrayList;
+
+;
+
 
 public class Vertice {
-    private Cidade cidades;
+
+    // atributos e listas da classe;
+
+    private City city;
+    private ArrayList<Aresta> entrada = new ArrayList<Aresta>();
     private ArrayList<Aresta> saida = new ArrayList<Aresta>();
 
-    public Vertice (Cidade cidades){
-        this.cidades = cidades;
+    // constructor;
+
+    public Vertice (City city) {
+        this.city = city;
     }
+
+    // get;
+
+    public City getCity () {
+        return this.city;
+    }
+
+    // methods;
+
+    // insertEntrada () recebe uma aresta e adiciona a lista de entrada;
+
+    public void insertEntrada (Aresta aresta) {
+        this.entrada.add(aresta);
+    }
+
+    // insertEntrada () recebe uma aresta e adiciona a lista de saida;
 
     public void insertSaida (Aresta aresta) {
-        saida.add(aresta);
+        this.saida.add(aresta);
     }
 
-    public Cidade getCidade () {
-        return this.cidades;
+    public int getSize() {
+        return saida.getSize();
     }
 
-    public Aresta get (int position) {
+    public Aresta getVertice(int position) {
         return saida.get(position);
     }
-    
 }
