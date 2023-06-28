@@ -8,18 +8,18 @@ public class MyApp {
         City cidade3 = new City("Principality of Nekikh");
         City cidade4 = new City("Principality of Gritesthr");
         City cidade5 = new City("Protectorate of Dogrove");
-        City cidade5 = new City("Kingdom of Lastwatch");
-        City cidade6 = new City("Grand Duchy of Smalia");
-        City cidade7 = new City("Kingdom of Oldcalia");
-        City cidade8 = new City("Kingdom of Kalb");
-        City cidade9 = new City("Aymar League");
-        City cidade10 = new City("Defalsia");
-        City cidade11 = new City("Vunese of Empire");
-        City cidade12 = new City("Principality of Karhora");
-        City cidade13 = new City("Chandir Sultanate");
-        City cidade14 = new City("Bun ");
-        City cidade15 = new City("Principality of Kasya");
-        City cidade16 = new City("Nargumun");
+        City cidade6 = new City("Kingdom of Lastwatch");
+        City cidade7 = new City("Grand Duchy of Smalia");
+        City cidade8 = new City("Kingdom of Oldcalia");
+        City cidade9 = new City("Kingdom of Kalb");
+        City cidade10 = new City("Aymar League");
+        City cidade11 = new City("Defalsia");
+        City cidade12 = new City("Vunese of Empire");
+        City cidade13 = new City("Principality of Karhora");
+        City cidade14 = new City("Chandir Sultanate");
+        City cidade15 = new City("Bun ");
+        City cidade16 = new City("Principality of Kasya");
+        City cidade17 = new City("Nargumun");
 
         Graph grafo = new Graph();
 
@@ -39,10 +39,58 @@ public class MyApp {
         grafo.insertVertice(cidade14);
         grafo.insertVertice(cidade15);
         grafo.insertVertice(cidade16);
+        grafo.insertVertice(cidade17);
 
+        //abud
         grafo.insertAresta(ubud, cidade2);
         grafo.insertAresta(ubud, cidade3);
-        grafo.insertAresta(cidade2, cidade7);
+
+        //legmond
+        grafo.insertAresta(cidade2, cidade3);
+        grafo.insertAresta(cidade2, cidade8);
+        grafo.insertAresta(cidade2, cidade5);
+
+        //nekikh
+        grafo.insertAresta(cidade3, cidade4);
+
+        //gritestar
+        grafo.insertAresta(cidade4, cidade5);
+        grafo.insertAresta(cidade4, cidade6);
+
+        //doggrove
+        grafo.insertAresta(cidade5, cidade6);
+        grafo.insertAresta(cidade5, cidade8);
+
+        grafo.insertAresta(cidade6, cidade7);
+        
+        grafo.insertAresta(cidade8, cidade6);
+        grafo.insertAresta(cidade8, cidade7);
+        grafo.insertAresta(cidade8, cidade9);
+        grafo.insertAresta(cidade8, cidade10);
+        grafo.insertAresta(cidade8, cidade11);
+
+        grafo.insertAresta(cidade9, cidade10);
+        grafo.insertAresta(cidade9, cidade12);
+
+        grafo.insertAresta(cidade9, cidade12);
+
+        grafo.insertAresta(cidade11, cidade10);
+
+        grafo.insertAresta(cidade10, cidade12);
+        grafo.insertAresta(cidade10, cidade13);
+        grafo.insertAresta(cidade10, cidade14);
+        grafo.insertAresta(cidade10, cidade15);
+        grafo.insertAresta(cidade10, cidade17);
+
+        grafo.insertAresta(cidade13, cidade17);
+
+        grafo.insertAresta(cidade14, cidade15);
+        grafo.insertAresta(cidade14, cidade16);
+
+        grafo.insertAresta(cidade15, cidade17);
+        
+
+
 
         Vertice currentCity = grafo.get(ubud);
 
